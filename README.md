@@ -6,4 +6,4 @@
 ## Contact 
 
 Developer: https://github.com/irtiza-S
-Website: 
+Website: https://irtiza-s.github.io/day-scheduler/
