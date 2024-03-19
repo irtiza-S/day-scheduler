@@ -28,54 +28,84 @@ header {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
-}
-
-.time-slot {
   display: flex;
-  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-bottom: 2px dotted black;
+  border-top: 2px dotted black;
+  border-left: none;
 }
 
-.time-slot textarea {
+.timeslot {
+  display: flex;
+  border-bottom: 1px solid white; 
+  border-right: 1px solid black;
+}
+
+.timeslot textarea {
   flex: 1;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-bottom: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-styling {
+  padding: 20px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(9, 150px);
+  width: 100%;
+  max-height: 2050px;
+}
+
+
+.time-sub-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
